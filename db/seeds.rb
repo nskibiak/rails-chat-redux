@@ -34,9 +34,12 @@ Channel.create(channels)
 
 puts 'Creating messages...'
 
+first_user = User.first
+first_channel = Channel.first
+
 message = {
-  user_id: 1,
-  channel_id: 4,
+  user_id: first_user.id,
+  channel_id: first_channel.id,
   content: "I can't believe this worked!"
 }
 
