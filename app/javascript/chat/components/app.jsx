@@ -3,7 +3,7 @@ import ChannelList from '../containers/channel_list';
 import MessageList from '../containers/message_list';
 import logo from '../assets/images/logo.svg';
 
-const App = () => {
+const App = (props) => {
   return (
     <div className="messaging-wrapper">
       <div className="logo-container">
