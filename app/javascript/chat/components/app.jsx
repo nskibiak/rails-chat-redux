@@ -9,8 +9,8 @@ const App = () => {
       <div className="logo-container">
         <img className="messaging-logo" src={ logo } alt="logo" />
       </div>
-      <ChannelList />
-      <MessageList />
+      <ChannelList selectedChannel={props.match.params.channel} />
+      <MessageList selectedChannel={props.match.params.channel} />
     </div>
   );
 };
