@@ -32,6 +32,5 @@ ReactDOM.render(
       </Switch>
     </BrowserRouter>
   </Provider>,
-  // chatContainer,
-  document.body.appendChild(document.createElement('div')),
+  chatContainer
 );

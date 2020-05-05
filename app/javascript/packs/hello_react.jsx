@@ -6,6 +6,9 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
 
+// const chatContainer = document.getElementById('chat_app');
+const root = document.getElementById('root')
+
 const Hello = props => (
   <div>Hello {props.name}!</div>
 )
@@ -21,6 +24,7 @@ Hello.propTypes = {
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
     <Hello name="World" />,
-    document.body.appendChild(document.createElement('div')),
+    root
+    // document.body.appendChild(document.createElement('div')),
   )
 })
