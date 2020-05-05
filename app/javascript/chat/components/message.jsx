@@ -13,12 +13,12 @@ function strToRGB(str) {
 }
 
 const Message = (props) => {
-  const { created_at, author, content } = props.message;
+  const { created_at, user_id, content } = props.message;
   const time = new Date(created_at).toLocaleTimeString();
   return (
     <div className="message-container">
       <i className="author">
-        <span style={{ color: strToRGB(author) }}>{author}</span>
+        <span style={{ color: strToRGB(user_id) }}>{user_id}</span>
         <small>{time}</small>
       </i>
       <p>{emojify(content)}</p>
